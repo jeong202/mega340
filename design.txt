@@ -1,0 +1,3 @@
+해상도(resolition) : 72
+단위(Units & Rulers) : rulers,type = pixels
+guides,grid &slices : gridline every(그리드라인의 크기설정:정사각형의 한 변의 길이) = 1 pixels, subdivisions(그리드라인의 분할설정:정사각형에 들어갈 작은 정사각형의 개수) = 10
