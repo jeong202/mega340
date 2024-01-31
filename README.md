@@ -42,7 +42,9 @@ https://m2.material.io/design/layout/responsive-layout-grid.html#grid-customizat
 32x32: 작업 표시줄의 단축키 아이콘으로 사용됩니다.
 96x96: 데스크탑의 단축키 아이콘으로 사용됩니다.
 180x180: iOS 기기의 애플 터치 아이콘으로 사용됩니다.
-
 Safari와 iOS 기기는 apple-touch-icon을 사용하여 웹사이트의 아이콘을 표시합니다. 이것은 주로 iOS 기기의 홈 화면에 웹 앱을 추가할 때 사용됩니다.
 apple-touch-icon-precomposed은 iOS 기기에서 애플 터치 아이콘을 제어하기 위해 사용하는 방법 중 하나입니다. 이를 사용하면 iOS가 이미지에 자동으로 추가하는 그림자 효과나 둥근 모서리를 방지할 수 있습니다.
 요약하자면, rel="icon"은 모든 브라우저를 대상으로 하며, 파비콘의 역할을 대표합니다. 반면에 rel="apple-touch-icon-precomposed"은 주로 iOS 기기를 위해 특별히 디자인된 애플 터치 아이콘을 나타냅니다.
+
+페이스북과 트위터를 포함한 소셜 미디어에서 웹 페이지를 공유할 때 사용되는 메타 태그로 콘텐츠의 요약내용이 미리보기로 보여지는 것
+
