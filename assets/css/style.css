@@ -8,7 +8,12 @@
     /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
-/* 가운데 영역 */
+#banner {
+    /* banner_menu의 기준점 */
+    position: relative;
+}
+
+/* 가운데 영역(그리드) */
 .container {
     position: relative;
     width: 1280px;
@@ -41,7 +46,7 @@
 }
 
 .header h1 strong {
-    /* 반응형작업시 사라짐 */
+    /* 반응형작업시 사라질 예정 */
     display: block;
     position: absolute;
     left: 194px;
@@ -82,4 +87,123 @@
     font-size: 17px;
     font-weight: 700;
     color: #444;
+}
+
+/* 배너 */
+.banner_menu {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    height: 100px;
+
+    /* float때문에 사라진 영역을 잡기 위해 사용
+    서브메뉴가 없기 때문에 clearfix 대신 간단하게 overflow: hidden을 사용하는 방식을 사용함 */
+    overflow: hidden;
+}
+
+.banner_menu a {
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.banner_menu a:hover {
+    color: #c1c1c1;
+}
+
+.banner_menu .bm_left {
+    float: left;
+}
+
+.banner_menu .bm_left ul {
+    padding-top: 7px;
+}
+
+.banner_menu .bm_left li {
+    /* line:after의 기준점 */
+    position: relative;
+
+    display: inline;
+    margin-right: 30px;
+}
+
+.banner_menu .bm_left li.total {
+    margin-right: 20px;
+}
+
+.banner_menu .bm_left li.total a {
+    font-size: 14px;
+    padding: 3px 10px;
+    display: inline-block;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+}
+
+.banner_menu .bm_left li.total a:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+}
+
+.banner_menu .bm_right {
+    float: right;
+    overflow: hidden;
+}
+
+.banner_menu .bm_right ul {
+    float: left;
+}
+
+.banner_menu .bm_right ul:first-child {
+    padding-top: 7px;
+}
+
+.banner_menu .bm_right li {
+    /* line:after의 기준점 */
+    position: relative;
+
+    display: inline;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.banner_menu .bm_right li.line {
+    margin-right: 38px;
+}
+
+.banner_menu li.line:after {
+    content: '';
+    width: 1px;
+    height: 14px;
+    background: #fff;
+    position: absolute;
+    right: -18px;
+    top: 2px;
+}
+
+.banner_menu .bm_right li.white {
+    margin-right: 10px;
+}
+
+.banner_menu .bm_right li.white a {
+    display: inline-block;
+    width: 80px;
+    background-color: #fff;
+    color: #3a0e6a;
+    padding: 7px 30px 9px 30px;
+    border: 1px solid #fff;
+}
+
+.banner_menu .bm_right li.purple {
+    margin-right: 0px;
+}
+
+.banner_menu .bm_right li.purple a {
+    display: inline-block;
+    width: 80px;
+    background-color: #3a0e6a;
+    color: #fff;
+    padding: 7px 30px 9px 30px;
+    border: 1px solid #6e40c4;
 }

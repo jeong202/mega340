@@ -98,6 +98,7 @@ img {
 }
 
 /* clearfix */
+/*  float을 초기화(clear) 하여 버그를 고쳐주는(fix) 코드가 필요한데 이것을 clearfix라고 합니다. */
 .clearfix:before,
 .clearfix:after {
     display: block;
