@@ -645,10 +645,20 @@
       //  기본 동작을 취소
       e.preventDefault();
 
-      // this = 현재 이벤트가 발생한 요소, 사용자가 실제로 클릭한 요소
+      // this = 현재 이벤트가 발생한 요소, 사용자가 실제로 클릭한 요소 자체
       // 사용자가 몇 번째 탭을 눌렀는지 확인
       const target = $(this)
       const index = target.index();
+
+      // 목록 active활성화
+      movBtn.removeClass("active")
+      target.addClass("active")
+
+      // 활성화된 영화 차트(포스터) 보이기
+      movCont.css("display","none") // 기존 영화 차트 제거
+      movCont.eq(index).css("display","block")
+
+
     })
 
   </script>
