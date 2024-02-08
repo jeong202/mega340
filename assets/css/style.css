@@ -349,14 +349,11 @@
 
 .movie_chart {
   height: 592px;
+  overflow: hidden;
   /* background-color: #ccc; */
 }
 
-.movie_chart > div {
-  overflow: hidden;
-}
-
-.movie_chart > div > div {
+.movie_chart>div>div>div {
   float: left;
   width: 292px;
   height: 592px;
@@ -364,19 +361,19 @@
   /* border: 1px solid #c4c4c4; */
 }
 
-.movie_chart > div > div:last-child {
+.movie_chart>div>div>div:last-child {
   margin-right: 0;
 }
 
-.movie_chart > div > div .poster {
+.movie_chart>div>div>div .poster {
   position: relative;
 }
 
-.movie_chart > div > div .poster img {
+.movie_chart>div>div>div .poster img {
   display: block;
 }
 
-.movie_chart > div > div .poster .rank {
+.movie_chart>div>div>div .poster .rank {
   position: absolute;
   top: 17px;
   left: 0;
@@ -389,45 +386,45 @@
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-.movie_chart > div > div .poster .rank strong {
+.movie_chart>div>div>div .poster .rank strong {
   color: #fff;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
 }
 
-.movie_chart > div > div .poster .mx {
+.movie_chart>div>div>div .poster .mx {
   position: absolute;
   top: 17px;
   right: 17px;
 }
 
-.movie_chart > div > div .poster .mx span {
+.movie_chart>div>div>div .poster .mx span {
   width: 103px;
   height: 25px;
   display: block;
 }
 
-.movie_chart > div > div .poster .mx .m {
+.movie_chart>div>div>div .poster .mx .m {
   background-position: 0 -75px;
 }
 
-.movie_chart > div > div .poster .mx .b {
+.movie_chart>div>div>div .poster .mx .b {
   background-position: 0 -100px;
 }
 
-.movie_chart > div > div .info {
+.movie_chart>div>div>div .info {
   background-color: #fff;
   padding: 17px;
   border: 1px solid #d9d9d9;
 }
 
-.movie_chart > div > div .info h3 {
+.movie_chart>div>div>div .info h3 {
   color: #333;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.movie_chart > div > div .info h3 span {
+.movie_chart>div>div>div .info h3 span {
   width: 29px;
   height: 29px;
   display: inline-block;
@@ -436,30 +433,41 @@
   /* background-color: #ccc; */
 }
 
-.movie_chart > div > div .info h3 span.all {
+.movie_chart>div>div>div .info h3 span.all {
   background-position: -87px -125px;
 }
 
-.movie_chart > div > div .info h3 span.a12 {
+.movie_chart>div>div>div .info h3 span.a12 {
   background-position: 0px -125px;
 }
 
-.movie_chart > div > div .info h3 span.a15 {
+.movie_chart>div>div>div .info h3 span.a15 {
   background-position: -29px -125px;
 }
 
-.movie_chart > div > div .info h3 span.a19 {
+.movie_chart>div>div>div .info h3 span.a19 {
   background-position: -58px -125px;
 }
 
-.movie_chart > div > div .info h3 strong {
+.movie_chart>div>div>div .info h3 strong {}
+
+.movie_chart>div>div>div .info .info_btn {
+  overflow: hidden;
 }
 
-.movie_chart > div > div .info .info_btn a {
-  display: inline-block;
+.movie_chart>div>div>div .info .info_btn a {
+  float: left;
+  width: 49%;
+  margin-right: 2%;
   background-color: #f2f2f2;
+  text-align: center;
   font-size: 18px;
-  padding: 15px 90px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.movie_chart>div>div>div .info .info_btn a:last-child {
+  margin-right: 0%;
 }
 
 /* ------------------------------미디어쿼리------------------------------ */
@@ -621,9 +629,7 @@
 }
 
 /* 모바일 */
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
 /* 모바일 */
-@media (max-width: 320px) {
-}
+@media (max-width: 320px) {}
