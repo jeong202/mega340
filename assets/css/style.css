@@ -556,10 +556,23 @@
     font-size: 16px;
     padding-top: 35px;
   }
+
+  .movie_title ul {
+    width: auto;
+  }
+
+  .movie_title li {
+    width: 25%;
+    box-sizing: border-box;
+  }
 }
 
 /* 모바일 가로 & 태블릿 세로 */
 @media (max-width: 768px) {
+  body {
+    background-color: #d9d7e0;
+  }
+
   .row {
     padding: 0 16px;
   }
@@ -575,6 +588,51 @@
   .header h1 strong {
     display: none;
   }
+
+  #movie .row {
+    background-color: #fff;
+    margin: 24px;
+    padding: 24px;
+  }
+
+  #movie .ir_so {
+    position: static;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    text-indent: 0;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .movie {
+    padding: 0;
+  }
+
+  .movie_title {}
+
+  .movie_title ul {}
+
+  .movie_title li {
+    width: auto;
+    border: 0;
+  }
+
+  .movie_title li a {
+    font-size: 18px;
+    color: #666;
+    font-weight: 400;
+    padding: 0;
+    margin-right: 35px;
+
+  }
+
+  .movie_title li.active a {
+    background: none;
+    color: #666;
+  }
+
 }
 
 /* 모바일 */
